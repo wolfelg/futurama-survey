@@ -1,0 +1,146 @@
+<html>
+    <head>
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<div class="container">
+    <header>
+      <h1 id="title">Futurama Survey Form</h1>
+      <p id="description"> Thank you for taking the time to complete our survey</p>
+    </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+                 type="text"
+                 id="name"
+                 placeholder="Enter your name"
+                 class="form-control"
+                 required/>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+                 type="email"
+                 id="email"
+                 placeholder="Enter your Email"
+                 class="form-control"
+                 required/>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="label">Age<span class="clue">(optional)</span></label>
+            <input
+                   type="number"
+                   id="number"
+                   class="form-control"
+                   min="10"
+                   max="99"
+                   placeholder="Age">
+          </div>
+        <div class="form-group">
+          <p>Which option best describes your favourite Futurama's quote?</p>
+          <select
+                 id="dropdown"
+                 name="quote"
+                 class="form-control"
+                 required>
+          <option disabled selected value>Select Favourite Quote</option>
+          <option value="bender">“Oh wait, you're serious. Let me laugh even harder.”</option>
+          <option value="zoidberg">“By the way, I took the liberty of fertilizing your caviar.”</option>
+          <option value="bend">“This is the worst kind of discrimination. The kind against me!”</option>
+          <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend Futurama to a friend?</p>
+          <label>
+          <input
+                 name="user-recommend"
+                 value="definitely"
+                 type="radio"
+                 class="input-radio"
+                 checked/> Definitely</label>
+          <label>
+            <input
+                   name="user-recommend"
+                   type="radio"
+                   class="input-radio"
+                   value="maybe"/> Maybe</label>
+          <label>
+            <input
+                   type="radio"
+                   name="user-recommend"
+                   class="input-radio"
+                   value="not sure"
+                   /> Not sure</label>         
+          </div>
+    <div class="form-group">
+      <p>Favourite Futurama Character?</p>
+      <select 
+              id="favourite"
+              name="favourite"
+              class="form-control"
+              required>
+        <option disabled selected value> Select an Option</option>
+        <option value="zoidberg"> Zoidberg</option>
+        <option value="bender"> Bender </option>
+        <option value="leela"> Leela</option>
+        <option value="fry"> Phillip J. Fry</option>
+        <option value="zapp"> Zapp Brannigan</option>
+        <option value="amy"> Amy</option>
+        <option value="kif"> Kif </option>
+        <option value="professor">
+          Professor Farnsworth</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p> What do you like most about Futurama?<span class="clue"> (Check all that apply)</span></p>
+      <label>
+        <input
+               name="prefer"
+               type="checkbox"
+               value="humour"
+               class="input-checkbox"> The Jokes
+      </label>
+      <label>
+        <input
+               name="prefer"
+               type="checkbox"
+               class="input-checkbox"
+               value="bender"> Bender
+      </label>
+      <label>
+        <input
+               name="prefer"
+               type="checkbox"
+               class="input-checkbox"
+               value="space"> Space
+      </label>
+      <label>
+        <input
+               name="prefer"
+               type="checkbox"
+               value="science"
+               class="input-checkbox"> Science
+      </label>
+      </div>
+    <div class="form-group">
+      <p> Any comments or suggestions? </p>
+      <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your comment here..."></textarea>
+    </div>
+    <div class="form-group">
+      <button 
+              type="submit"
+              id="submit"
+              class="submit-button"> Submit </button>
+      </div
+                
+    
+      </form>
+  </div>
+  </body>
+  </html>
